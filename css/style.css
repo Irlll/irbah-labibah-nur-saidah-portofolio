@@ -1,0 +1,296 @@
+:root {
+  --bgblue: #dbdcfd;
+  --fontblue: #5c4989;
+  --bgpink: #ffe1f4;
+  /* --bgpink: #fffef2; */
+  --fontpink: #b8709e;
+  /* --fontpink: #5c4989; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  font-family: "Halant", serif;
+  background-color: var(--bgpink);
+  color: #000;
+  /* min-height: 5000px; */
+}
+
+/* Hero Section */
+
+.hero .container {
+  display: flex;
+}
+
+.hero .container .intro {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bgblue);
+}
+
+.hero .container .profile {
+  flex: 1;
+  min-height: 100vh;
+  background: url("../css/img/bg-profile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container .profile img {
+  display: block;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .container .intro .intro-content {
+  flex-wrap: wrap;
+  /* background-color: aquamarine; */
+  width: 70%;
+  height: 67.5%;
+  /* width: 36rem; */
+  margin: auto;
+}
+
+.hero .container .intro .intro-content h2 {
+  font-family: "Lobster", cursive;
+  font-size: 3.5em;
+  font-weight: 500;
+  color: var(--fontblue);
+}
+
+.hero .container .intro .intro-content .desc h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.7rem;
+  color: #5c4989;
+}
+
+/* .hero .container .intro .intro-content .desc i {
+  font-size: 1em;
+} */
+
+.hero .container .intro .intro-content p {
+  font-size: 1.05rem;
+  margin: 1.5% 0 5%;
+}
+
+.hero .container .intro .intro-content .desc {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .container .intro .intro-content .intro-button {
+  margin-bottom: 1.5rem;
+}
+
+.hero .container .intro .intro-content .menu-button h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.hero .container .intro .intro-content a .menu-button {
+  background-color: #fff;
+  color: #000;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--fontblue);
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+}
+
+.hero .container .intro .intro-content a:hover .menu-button {
+  color: var(--bgblue);
+  background-color: var(--fontblue);
+}
+
+/* Certifications Section */
+/* .certifications,
+.portofolio {
+  min-height: 100vh;
+} */
+
+.certifications h2,
+.portofolio h2 {
+  margin: 2rem 0 1rem;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 3em;
+  font-weight: 500;
+  color: var(--fontpink);
+}
+
+.certifications .container,
+.portofolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255, 0.5);
+  /* min-height: 19rem; */
+  margin-bottom: 0.7rem;
+}
+
+.certifications .container .certification-box/*,
+.portofolio .container .portofolio-box*/ {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 22.2rem;
+  height: 22rem;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+
+.certifications .container .certification-box img/*,
+.portofolio .container .portofolio-box img*/ {
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  width: 19rem;
+  object-fit: cover;
+}
+
+.certifications .container .certification-box p,
+.portofolio .container .portofolio-box p {
+  color: #000;
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+/* Portofolio Section */
+.portofolio .container .portofolio-box {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 17rem;
+  height: 20.5rem;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+
+.portofolio .container .portofolio-box img {
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.portofolio .container .portofolio-box p {
+  color: #000;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35rem;
+}
+
+footer .credit {
+  /* height: 3rem; */
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #b8709e;
+}
+
+footer .credit a {
+  color: var(--bgpink);
+  font-weight: 400;
+}
+
+/* MEdia Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .hero .container .profile img {
+    width: 75%;
+    margin-top: 20rem;
+  }
+
+  .hero .container .intro {
+    flex: 2;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 484px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero .container .intro .intro-content h2 {
+    font-family: "Lobster", cursive;
+    font-size: 3.1em;
+    font-weight: 500;
+    color: var(--fontblue);
+  }
+
+  /* .certifications .container .certification-box {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 30rem;
+    height: 30rem;
+    background-color: #fff;
+    margin: 0.5rem;
+  } */
+
+  .portofolio .container .portofolio-box,
+  .certifications .container .certification-box {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 17rem;
+    height: 22rem;
+    background-color: #fff;
+    margin: 0.5rem;
+  }
+
+  .certifications .container .certification-box img {
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    width: 16rem;
+    object-fit: cover;
+  }
+
+  /*
+  .certifications .container .certification-box p {
+    color: #000;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+  } */
+
+  /* .portofolio .container .portofolio-box p {
+    color: #000;
+    margin: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+  } */
+}
